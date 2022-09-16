@@ -1,6 +1,6 @@
 # SQL-8-Business-Case-Study
 
-I followed along with Danny Ma to conduct the 8 business case studies with SQL.\
+I followed along with Danny Ma to conduct the 8 business case studies with SQL.
 
 The 8 Week SQL Challenge is proudly brought to you by the Data With Danny Ma. Below are the 8 case studies.\
 Case Study #1 - Danny’s Diner
