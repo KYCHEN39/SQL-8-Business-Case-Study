@@ -1,6 +1,7 @@
-# SQL-8-Business-Case-Study
+<h1 align="center">SQL 8 Business Case Studies</h1>
 
-I followed along with Danny Ma to conduct the 8 business case studies with SQL.
+## Overview
+I tackled some fantastic case studies curated by Danny Ma. The case studies give you hands-on experience to clean data and understand the challenges of working with real-world data. They test your SQL level from Basic to Advanced concepts such as **window functions, common table expressions, ranking functions, case stataments, etc.**. 
 
 The 8 Week SQL Challenge is proudly brought to you by the Data With Danny Ma. Below are the 8 case studies.\
 Case Study #1 - Danny’s Diner
@@ -13,4 +14,7 @@ Case Study #7 - Balanced Tree Clothing Co.\
 Case Study #8 - Fresh Segments\
 You can find the challenge here: https://lnkd.in/gHyHZkGG
 
- 
+
+## Case Studies and their Solutions
+Please refer to above files for each case study.
+
