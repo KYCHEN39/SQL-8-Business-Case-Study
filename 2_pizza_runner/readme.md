@@ -1,4 +1,4 @@
-h1 align="center">CASE STUDY #2 - Pizza Runner</h1>
+<h1 align="center">CASE STUDY #2 - Pizza Runner</h1>
 
 ## Introduction
 Did you know that over 115 million kilograms of pizza is consumed daily worldwide??? (Well according to Wikipedia anyway…)
@@ -20,7 +20,7 @@ All datasets exist within the pizza_runner database schema.
 The data has some issues which need to be tackled before it can be used to answer the questions of the case study. 
 #### customer_orders
 
-Before
+Before\
 The columns 'exclusions' and 'extras' have values such as 'null' and 'Nan' which need to cleaned and replaced with actual null values. All blanks have been cleaned and replaced with actual null values.
 <img src = "https://github.com/KYCHEN39/SQL-8-Business-Case-Study/blob/main/2_pizza_runner/image%20for%20case%20study%202/dc1%20before.png" />
 
@@ -42,7 +42,7 @@ From customer_orders
 
 #### runner_orders
 
-Before
+Before\
 The columns 'distance' and 'duration' have mixed values with words 'km', 'minutes' and 'mins' which need to be cleared out. The column 'cancellation' has issues as well and as a result this column needs to be standardised too.
 <img src = "https://github.com/KYCHEN39/SQL-8-Business-Case-Study/blob/main/2_pizza_runner/image%20for%20case%20study%202/dc2%20before.png" />
 
@@ -73,7 +73,7 @@ from runner_orders;
 
 ## Case Study Questions and Solutions
 
-#### Pizza Metrics - by analyzing orders, we are able to understand the popular month/day, which types of pizza are more popular, customers flavor toward exclusions and extras, etc.
+### Pizza Metrics - by analyzing orders, we are able to understand the popular month/day, which types of pizza are more popular, customers flavor toward exclusions and extras, etc.
 #### 1. How many pizzas were ordered?
 ```sql
 Select pizza_id, count(pizza_id) as count
@@ -82,7 +82,7 @@ Group by 1 with rollup
 Order by 1
 ;
 ```
-<img src = "https://github.com/KYCHEN39/SQL-8-Business-Case-Study/blob/main/2_pizza_runner/image%20for%20case%20study%202/A%20q1.pngg" />
+<img src = "https://github.com/KYCHEN39/SQL-8-Business-Case-Study/blob/main/2_pizza_runner/image%20for%20case%20study%202/A%20q1.png" />
 
 #### 2. How many unique customer orders were made?
 ```sql
@@ -181,7 +181,7 @@ Order by 2 desc;
 <img src = "https://github.com/KYCHEN39/SQL-8-Business-Case-Study/blob/main/2_pizza_runner/image%20for%20case%20study%202/A%20q9.png" />
 
 
-#### Runner and Customer Experience - by analyzing orders, we are able to understand the customer experience with runner and the delivery service.
+### Runner and Customer Experience - by analyzing orders, we are able to understand the customer experience with runner and the delivery service.
 #### 1. How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 ```sql
 Select week(registration_date) as registration_week, count(runner_id) as runners
@@ -272,7 +272,7 @@ Order by 1
 <img src = "https://github.com/KYCHEN39/SQL-8-Business-Case-Study/blob/main/2_pizza_runner/image%20for%20case%20study%202/B%20q7.png" />
 
 
-#### Pricing and Ratings - by analyzing the pricing, we are able to understand the profit and the cost.
+### Pricing and Ratings - by analyzing the pricing, we are able to understand the profit and the cost.
 #### 1. If a Meat Lovers pizza costs $12 and Vegetarian costs $10 and there were no charges for changes: how much money has Pizza Runner made so far if there are no delivery fees?
 ```sql
 With cal_price as (
